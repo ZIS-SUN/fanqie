@@ -1,4 +1,4 @@
-# 番茄待办提醒
+# 🍅 番茄待办提醒
 
 一款基于 Electron + React + MySQL 的桌面应用，结合番茄工作法和任务管理功能。
 
@@ -8,7 +8,7 @@
 - 🍅 番茄钟计时（可自定义时间）
 - 🔔 桌面通知提醒
 - 📊 工作统计和报告
-- 🎨 现代化UI设计
+- 🎨 鸿蒙极简设计风格
 - 💾 MySQL数据持久化
 
 ## 技术栈
@@ -39,7 +39,7 @@ npm install
 #### 2. 配置数据库
 
 确保本地MySQL服务已启动，默认配置：
-- Host: localhost
+- Host: 127.0.0.1
 - Port: 3306
 - User: root
 - Password: 1234
@@ -96,7 +96,7 @@ project/
 │   │   ├── config.js      # 数据库连接配置
 │   │   ├── init-db.js     # 数据库初始化脚本
 │   │   └── queries.js     # SQL查询封装
-│   └── renderer/          # React前端（自动生成在src/下）
+│   └── components/        # React组件
 ├── public/                # 静态资源
 ├── build/                 # 构建输出
 └── package.json           # 项目配置
@@ -120,7 +120,14 @@ project/
 3. **通知系统**: 任务提醒和番茄钟提醒
 4. **统计报告**: 日/周/月统计分析
 
+## 🧪 测试
+
+```bash
+npm test              # 环境检查
+npm run db:test       # 数据库测试
+npm run test:all      # 完整测试
+```
+
 ## 许可证
 
 MIT
-
